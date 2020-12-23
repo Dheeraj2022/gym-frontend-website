@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-compatiable" content="ie=edge">
+<title>Fitness</title>
+</head>
+<script type = "text/JavaScript">
+        function Hello() {
+           alert("You are registered");
+        }
+     </script>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+  font-family: cursive;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background:url('bg1.jpg');
+  height: auto;
+  width: auto;
+}
+  .left{
+    position: absolute;
+    left: 54px;
+    top: 10px;
+    display: inline-block;
+  /*  border: 2px solid white;*/
+  }
+  .left img{
+    width: 99px;
+    filter: invert(100%);
+  }
+  .left div{
+
+
+    text-align: center;
+    text-decoration: none;
+  }
+  .mid{
+  display: block;
+  width: 39%;
+  margin: 12px auto;
+  font-size: 23px;
+/*  border: 2px solid green;*/
+
+  }
+  .right{
+    position: absolute;
+    right: 34px;
+    top: 20px;
+  display: inline-block;
+  /*border: 2px solid yellow*/
+  }
+ .navbar{
+   display: inline-block;
+ }
+ .navbar li{
+   display: inline-block;
+   font-size: 20px;
+ }
+ .navbar li a{
+   color: white;
+   text-decoration: none;
+   padding: 34px 23px;
+
+ }
+ .navbar li a:hover,.navbar li a.active{
+text-decoration: underline;
+
+  color: blue;
+ }
+ .btn{
+   font-family: cursive;
+   margin: 0px 9px;
+   color: black;
+   text-decoration-color: blue;
+   background-color: azure;
+   padding: 4px 14px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   font-size: 20px;
+   cursor: pointer;
+ }
+ .btn:hover{
+   background-color: #3e8e41;
+  color: white;
+
+ }
+ .container{
+  border: 2px solid red;
+  margin: 106px 190px;
+  padding: 75px;
+  width: 33%;
+  border-radius: 20px;
+}
+.formg input{
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 5px auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.container h1{
+  text-align: center;
+}
+.container button{
+  display: block;
+  width: 74%;
+  margin: 20px auto;
+
+}
+/*.mark{
+  bottom: auto;
+  color: green;
+  margin: 1px auto;
+  font-size: 20px;
+}*/
+ </style>
+ <body>
+   <header class="header">
+     <div class="left">
+         <img src="gym.jpg" alt="">
+         <div>Fitness gym</div>
+
+     </div>
+     <!-- mid box -->
+     <div class="mid">
+       <ul class="navbar">
+         <li><a href="#" class="active"> Home </a> </li>
+            <li><a href="bmi.html"> BMI </a> </li>
+              <li><a href="about.html"> Contact Us </a> </li>
+               <li><a href="#"> About Us </a> </li>
+     </div>
+   <!-- right box -->
+     <div class="right">
+       <button class="btn" onclick="document.location='in2.html'">Sign Up</button>
+       <button class="btn" onclick="document.location='signin.html'">Sign in</button>
+     </div>
+   </header>
+<!--   <div class="container">
+      <h1>Register Now</h1>
+      <form action="none">
+        <div class="formg">
+          <input type="text" name="" placeholder="Enter Your Name">
+    </div>
+    <div class="formg">
+      <input type="text" name="" placeholder="Enter Your Age">
+</div>
+<div class="formg">
+  <input type="text" name="" placeholder="Enter Your Gender">
+</div>
+<div class="formg">
+  <input type="text" name="" placeholder="Enter Your Email Id">
+</div>
+<button class="btn" onclick="Hello()">Submit</button>
+
+      </form>
+   </div> -->
+   <footer>
+  <marquee style="color:red;" width="60%" direction="up" height="100px">
+    ‘The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.’
+
+   — Arnold Schwarzenegger, seven-time Mr. Olympia
+</marquee>
+<marquee style="color:darkmagenta;" width="60%" direction="up" height="100px">
+  ‘The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.’
+
+ — Arnold Schwarzenegger, seven-time Mr. Olympia
+</marquee>
+<marquee style="color:azure;" width="60%" direction="up" height="100px">
+  ‘The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.’
+
+ — Arnold Schwarzenegger, seven-time Mr. Olympia
+</marquee>
+<br>
+<br>
+<marquee direction="right">
+<img src="1.jpg" alt="Girl in a jacket" width="300" height="200">
+<img src="5.jpg" alt="Girl in a jacket" width="300" height="200">
+<img src="4.jpg" alt="Girl in a jacket" width="300" height="200">
+<img src="3.jpg" alt="Girl in a jacket" width="300" height="200">
+<img src="2.jpg" alt="Girl in a jacket" width="300" height="200">
+</marquee>
+
+</footer>
+ </body>
+ </html>

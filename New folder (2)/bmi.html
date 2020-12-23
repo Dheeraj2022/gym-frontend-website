@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-compatiable" content="ie=edge">
+<title>BMI</title>
+<script type = "text/JavaScript">
+function calcBMI() {
+var weight = document.bmiform.pounds.value, height = document.bmiform.inches.value;
+document.bmiform.bmi.value = parseInt(((weight) / (height * height))*10000);
+}
+     </script>
+
+<style media="screen">
+body{
+  font-family: cursive;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background: url("b4.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+fieldset {
+  width: 322px;
+      margin: 28px 0 0 549px;
+      border: 5px solid #999C0F;
+      box-shadow: 13px 15px #CCCE3B;
+      padding: 49px;
+}
+
+label {
+float: left;
+width: 140px;
+display: block;
+clear: left;
+text-align: right;
+padding-right: 10px;
+margin-top: 10px;
+}
+
+button {
+margin-left: 150px;
+}
+
+input {
+margin-top: 10px;
+display: block;
+text-align: right;
+width: 128px;
+}
+
+#bmi_label {
+width: 200px;
+}
+
+#bmi {
+width: 66px;
+}
+
+#intro {
+      text-align: center;
+      color: azure;
+      width: 304px;
+      margin: 24px 22px 0px 594px;
+      padding: 10px;
+      border: 1px solid #999999;
+      box-shadow: 6px 4px #CCCD1C;
+
+}
+</style>
+<body>
+	<div>
+		<p id="intro">BMI Calculator</p>
+		<form action="none" method="post" name="bmiform">
+			<fieldset>
+			<legend>Height and Weight</legend>
+				<label for="pounds">Weight:</label>
+				<input type="text" name="pounds" id="pounds">
+				<br>
+				<label for="inches">Height:</label>
+				<input type="text" name="inches" id="inches">
+				<br>
+				<button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
+			</fieldset>
+			<fieldset>
+			<legend>BMI</legend>
+				<label for="bmi" id="bmi_label">Your calculated BMI is:</label>
+				<input type="text" name="bmi" id="bmi" readonly="readonly">
+			</fieldset>
+		</form>
+	</div>
+</body>
